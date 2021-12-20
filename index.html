@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi M4</title>
+    
+<style>
+
+       body{
+           background-color: black;
+           overflow: hidden;
+       }
+       #portadaM4 {
+                width: 80vw;
+                height: 80vh;
+                background-color: black;
+                display: block;
+                margin: auto;
+                display: flex;
+            }
+            
+        #fotom4 {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            display: block;
+            margin: auto;
+            object-fit: cover 
+        }
+
+        @media screen and (orientation:landscape) {
+            #m4 {
+                width: 80%;
+                height: 80%;
+                background-color: black;
+                margin:auto; 
+            }
+        }
+        @media screen and (orientation:portrait) {
+            #m4 {
+                width: 250px;
+                height: 450px;
+                background-color: black;
+                margin:auto;
+            }
+        }
+        
+            
+
+    </style>
+</head>
+<body>
+
+    <picture id="portadaM4">                                                          
+        <source media="(orientation: portrait) and (min-width: 1200px)" srcset="./Foto1/M4Vertical1200.heic"type="image/heic">
+        <source media="(orientation: portrait) and (min-width: 1200px)" srcset="./Foto1/M4Vertical1200.webp"type="image/webp">
+        <source media="(orientation: portrait) and (min-width: 1200px)" srcset="./Foto1/M4Vertical1200.jpg"type="image/jpg">
+
+        <source media="(orientation: portrait) and (max-width: 1199px)" srcset="./Foto2/M4Vertical600.heic"type="image/heic">
+        <source media="(orientation: portrait) and (max-width: 1199px)" srcset="./Foto2/M4Vertical600.webp"type="image/webp">
+        <source media="(orientation: portrait) and (max-width: 1199px)" srcset="./Foto2/M4Vertical600.jpg"type="image/jpg">
+
+        <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./Foto3/M4Horizontal1920.heic"type="image/heic">
+        <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./Foto3/M4Horizontal1920.webp"type="image/webp">
+        <source media="(orientation: landscape) and (min-width: 1920px)" srcset="./Foto3/M4Horizontal1920.jpg"type="image/jpg">
+        
+        <source media="(orientation: landscape) and (max-width: 1920px)" srcset="./Foto4/M4Horizontal800.heic"type="image/heic">
+        <source media="(orientation: landscape) and (max-width: 1920px)" srcset="./Foto4/M4Horizontal800.webp"type="image/webp">
+        <source media="(orientation: landscape) and (max-width: 1920px)" srcset="./Foto4/M4Horizontal800.jpg"type="image/jpg">
+        
+        <img
+            id="fotom4"
+            alt="fotos de un M4" 
+            title="Audi M4"
+            src=".Foto4/M4Horizontal800.jpg">
+
+        </picture>
+    
+        
+
+
+
+
+    </picture>
+    
+</body>
+</html>
